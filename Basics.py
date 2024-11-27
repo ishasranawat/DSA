@@ -12,5 +12,10 @@ print(a1)
 # Traversal 
  for i in a1:
    print(i)
- # output- 1 7 2 3 4 5 6
+ # output- 1 2 3 4 5 6
+
+# remove element
+a1.pop(2)
+print(a1)
+# output- 1 2 4 5 6
 
