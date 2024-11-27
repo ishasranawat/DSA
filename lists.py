@@ -55,3 +55,12 @@ def linear_search(list,target):
             return "Target not found"
             
 print(linear_search([1,2,4,6,4,3],78))
+
+
+# ** Delimeter** Convert string to a list 
+a= 'hello,hello,hello'
+delimeter= ','
+b= a.split(delimeter)
+print(b)
+
+# op- ['hello', 'hello', 'hello']
