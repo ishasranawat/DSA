@@ -25,3 +25,15 @@ a1.remove(5)
 print(a1)
 # output array('i', [1, 2, 3, 4, 6])
 
+
+#linear search 
+def linear_search(arr, target):
+  for i in range(len(arr)):
+    if arr[i]== target:
+      return i
+  else:
+    return -1
+
+print(linear_search(a1, 9)) 
+# output- -1
+
