@@ -27,3 +27,22 @@ newlist= ['w','p','o']
 list.extend(newlist)
 print(list)
 # ['f', 'a', 'b', 'c', 'j', 'w', 'p', 'o']
+
+
+# pop 
+list.pop()
+print(list)
+# op- ['a', 'b']
+
+
+# remove
+list.remove('a')
+print(list)
+#op- ['b','c']
+
+
+
+# delete
+del list[0:2]
+print(list)
+#op- []
