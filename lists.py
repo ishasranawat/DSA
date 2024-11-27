@@ -41,8 +41,17 @@ print(list)
 #op- ['b','c']
 
 
-
 # delete
 del list[0:2]
 print(list)
 #op- []
+
+# linear search
+def linear_search(list,target):
+    for i in list:
+        if target in range(len(list)):
+            return "Target found"
+        else:
+            return "Target not found"
+            
+print(linear_search([1,2,4,6,4,3],78))
