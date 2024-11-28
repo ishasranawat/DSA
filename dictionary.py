@@ -1,0 +1,21 @@
+# Create a dictionary 
+my_dict= {
+    'apple':'sweet',
+    'orange':'sour',
+    'watermelon':{'one':"1",'two':'2','three':'3'}
+}
+print(my_dict)
+# to get the keys
+print(my_dict.keys())
+
+# adding a pair
+my_dict['strawberry']='pretty'
+print(my_dict)
+
+# traversal 
+def print_dict(my_dict):
+    for key in my_dict:
+        print(key, my_dict[key])
+
+print_dict(my_dict)
+
