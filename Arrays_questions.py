@@ -40,4 +40,14 @@ def max_product(arr):
     return product
 
 
+# Remove first and last element and print the middle list
+def middle(lst):
+    lst.pop()
+    lst.pop(0)
+    return lst
+
+lst=[1,2,3,4]
+print(middle(lst))
+
+
     
