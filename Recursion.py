@@ -22,3 +22,15 @@ def fibonacci(n):
         return (fibonacci(n-1)+ fibonacci(n-2))
     
 print(fibonacci(7))
+
+
+# sum of positive numbers
+def sumofposnum(n):
+    if n < 0:
+        return "Invalid number"
+    elif n == 0:
+        return 0
+    else:
+        return (n % 10) + sumofposnum(n // 10)
+    
+print(sumofposnum(234))
