@@ -32,4 +32,12 @@ my_arr=[1,2,3,4,5,6,7]
 find_num(my_arr,9)
 
 
+# Find the maximum product of two integers in an array where all elements are positive
+def max_product(arr):
+    arr.sort()
+    n=len(arr)
+    product= arr[n-1]*arr[n-2]
+    return product
+
+
     
