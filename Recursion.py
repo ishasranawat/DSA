@@ -34,3 +34,17 @@ def sumofposnum(n):
         return (n % 10) + sumofposnum(n // 10)
     
 print(sumofposnum(234))
+
+
+
+# Power 
+def powerofnum(x,n):
+    if n==0:
+        return 1
+    elif n<0:
+        return ("Invalid")
+    else:
+        return (x*powerofnum(x,n-1))
+
+print(powerofnum(2,6))
+    
