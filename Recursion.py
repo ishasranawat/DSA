@@ -47,4 +47,15 @@ def powerofnum(x,n):
         return (x*powerofnum(x,n-1))
 
 print(powerofnum(2,6))
+
+# def powerofnum(x, n):
+#     if n == 0:
+#         return 1
+#     elif n < 0:
+#         return 1 / powerofnum(x, -n)  # Handle negative exponents
+#     else:
+#         return x * powerofnum(x, n - 1)
+
+# print(powerofnum(2, 6))  # Output: 64
+# print(powerofnum(2, -3))
     
