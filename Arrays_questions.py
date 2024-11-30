@@ -61,6 +61,7 @@ lst=[1,2,3,4]
 print(middle(lst))
 
 
+
 # Given a list, write a function to get first, second best scores from the list.
 def first_second(my_list):
     unique_scores = list(set(my_list))
@@ -70,6 +71,21 @@ def first_second(my_list):
    
 my_list =[84,85,86,87,85,90,85,83,23,45,84,1,2,0]
 print(first_second(my_list))
+
+
+
+# Write a function to find all pairs of an integer array whose sum is equal to a given number. Do not consider commutative pairs.
+def pair_sum(arr, target_sum):
+    result = []
+    for i in range(len(arr)):
+        for j in range(i+1, len(arr)):
+            if arr[i] + arr[j] == target_sum:
+                result.append(f"{arr[i]}+{arr[j]}")
+    return result
+ 
+arr = [2, 4, 3, 5, 6, -2, 4, 7, 8, 9]
+target_sum = 7
+print(pair_sum(arr, target_sum))
 
 
     
