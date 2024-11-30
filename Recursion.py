@@ -58,4 +58,11 @@ print(powerofnum(2,6))
 
 # print(powerofnum(2, 6))  # Output: 64
 # print(powerofnum(2, -3))
-    
+
+# Product of Array
+def productOfArray(arr):
+    if len(arr) == 0:
+        return 1
+    return arr[0] * productOfArray(arr[1:])
+
+print(productOfArray([1, 2, 3]))
