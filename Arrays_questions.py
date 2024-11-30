@@ -32,6 +32,17 @@ my_arr=[1,2,3,4,5,6,7]
 find_num(my_arr,9)
 
 
+
+# remove duplicate numbers
+def remove_duplicates(arr):
+    new_arr= list(set(arr))
+    return new_arr
+ 
+arr=[1, 1, 2, 2, 3, 4, 5]  
+print(remove_duplicates(arr))
+
+
+
 # Find the maximum product of two integers in an array where all elements are positive
 def max_product(arr):
     arr.sort()
