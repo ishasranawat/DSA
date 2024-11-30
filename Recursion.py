@@ -74,3 +74,28 @@ def recursiveRange(num):
     if num <= 0:
         return 0
     return num + recursiveRange(num - 1)
+
+
+# reverse a string
+def reverse(strng):
+    if len(strng) <= 1:
+      return strng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
