@@ -50,4 +50,15 @@ lst=[1,2,3,4]
 print(middle(lst))
 
 
+# Given a list, write a function to get first, second best scores from the list.
+def first_second(my_list):
+    unique_scores = list(set(my_list))
+    unique_scores.sort()
+    n=len(unique_scores)
+    return(unique_scores[n-1],unique_scores[n-2])
+   
+my_list =[84,85,86,87,85,90,85,83,23,45,84,1,2,0]
+print(first_second(my_list))
+
+
     
