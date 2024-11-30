@@ -83,6 +83,50 @@ def reverse(strng):
     return strng[len(strng)-1] + reverse(strng[0:len(strng)-1])
 
 
+# capitalize first letter
+def capitalizeFirst(arr):
+    result= []
+    for word in arr:
+        capFirst= word[0].upper()+ word[1:]
+        result.append(capFirst)
+    return result
+ 
+ 
+arr= ['car', 'taco', 'banana']      
+print(capitalizeFirst(arr))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
