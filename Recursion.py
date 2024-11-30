@@ -66,3 +66,11 @@ def productOfArray(arr):
     return arr[0] * productOfArray(arr[1:])
 
 print(productOfArray([1, 2, 3]))
+
+
+
+# Recursive range (eg- IP-6 OP- 6+5+4+3+2+1)
+def recursiveRange(num):
+    if num <= 0:
+        return 0
+    return num + recursiveRange(num - 1)
