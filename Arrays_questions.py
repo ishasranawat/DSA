@@ -7,6 +7,7 @@ def missing_number(arr, n):
     return missing
 
 
+
 # Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. (Two sum)
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -14,5 +15,21 @@ class Solution:
              for j in range(i+1, len(nums)):
                 if nums[i]+ nums[j]== target:
                     return [i,j]
+
+
+
+
+# Find a number in the array
+def find_num(arr,target):
+    for i in range(len(arr)):
+        if arr[i]==target:
+            print (f"{target} is present.")
+            return 
+    
+    print ("Target not found")
+ 
+my_arr=[1,2,3,4,5,6,7]       
+find_num(my_arr,9)
+
 
     
