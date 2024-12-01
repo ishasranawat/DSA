@@ -141,6 +141,27 @@ def findSecondLargest(sequenceOfNumbers):
 
 
 
+# rearrange alteratively
+def rearrange(arr):
+    # Separate positive and negative numbers
+    positives = [x for x in arr if x >= 0]
+    negatives = [x for x in arr if x < 0]
+    
+    # Initialize result array
+    result = []
+    
+    # Alternate between negative and positive numbers
+    for i in range(max(len(positives), len(negatives))):
+        # Add negative number if available
+        if i < len(negatives):
+            result.append(negatives[i])
+        
+        # Add positive number if available
+        if i < len(positives):
+            result.append(positives[i])
+
+
+
 
 
 
