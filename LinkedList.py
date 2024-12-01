@@ -1,4 +1,4 @@
-# Create a Linked list
+1.# Create a Linked list
 class Node:
     def __init__(self, value):
         self.value = value
@@ -10,3 +10,22 @@ class LinkedList:
         self.head = new_node
         self.tail = self.head
         self.length = 1
+        
+
+2.# Insertion at the beginning
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+
+class LinkedList:
+    def __init__(self):
+        self.head = None
+        self.length = 0
+        
+    def prepend(self, value):
+        new_node= Node(value)
+        new_node.next=self.head
+        self.head=new_node
+        self.length+=1
+            
