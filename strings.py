@@ -1,4 +1,4 @@
-# Reverse a string 
+1.## Reverse a string  ##
 def reverseString(str: str) -> str:
     # Split the string into words, removing extra whitespace
     words = str.split()
@@ -11,7 +11,7 @@ def reverseString(str: str) -> str:
 
 
 
-# Palindrome 
+2.## Palindrome ##
 
 def is_palindrome(s):
     # Convert to lowercase and remove spaces
@@ -29,7 +29,7 @@ print(result)
 
 
 
-# Reverse string including all characters
+3.## Reverse string including all characters ##
 def reverseString(STR):
     return STR[::-1]
 
@@ -43,5 +43,58 @@ for _ in range(T):
     
     # Print the reversed string
     print(reverseString(STR))
+
+
+4.## FInd first non repeating character ##
+
+from collections import Counter
+
+def findNonRepeating(str):
+    # Count the frequency of each character
+    char_count = Counter(str)
+    
+    # Iterate over the string to find the first non-repeating character
+    for char in str:
+        if char_count[char] == 1:
+            return char
+    
+    # If no non-repeating character is found, return '#'
+    return '#'
+# Function to process multiple test cases
+def processTestCases():
+    T = int(input())  # Number of test cases
+    results = []
+    for _ in range(T):
+        string = input().strip()
+        results.append(findNonRepeating(string))
+    # Print all results
+    print("\n".join(results))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
