@@ -101,4 +101,46 @@ nums= [1,2,3,1]
 print(contains_duplicate(nums))
 
 
+# FIND DUPLICATE 
+from sys import *
+from collections import *
+from math import *
+
+def findDuplicate(arr:list, n:int):
+    arr.sort()
+    for i in range(1,n):
+        if arr[i]==arr[i-1]:
+            return arr[i]
+    return -1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
