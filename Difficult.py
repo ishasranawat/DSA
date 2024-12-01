@@ -38,3 +38,56 @@ def allocateBooks(arr, n, m):
 n, m = map(int, input().split())  # Read number of books (n) and number of students (m)
 arr = list(map(int, input().split()))  # Read the array of pages
 print(allocateBooks(arr, n, m))
+
+
+
+
+# ROTATE ARRAY 
+def rotateArray(arr, k):
+    # Normalize k to handle cases where k > len(arr)
+    n = len(arr)
+    k = k % n
+    
+    # Slice and concatenate
+    return arr[k:] + arr[:k]
+
+# Main function to handle input
+def main():
+    # Read array size
+    n = int(input())
+    
+    # Read array elements
+    arr = list(map(int, input().split()))
+    
+    # Read rotation steps
+    k = int(input())
+    
+    # Rotate and print
+    rotated_arr = rotateArray(arr, k)
+    print(*rotated_arr)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
