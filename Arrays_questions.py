@@ -114,6 +114,20 @@ def findDuplicate(arr:list, n:int):
     return -1
 
 
+# next greater number
+from typing import List
+
+def nextGreaterElement(arr: List[int], n: int) -> List[int]:
+    result = [-1] * n  
+    for i in range(n):
+        
+        for j in range(i + 1, n):
+            if arr[j] > arr[i]:
+                result[i] = arr[j]
+                break  
+    
+    return result
+
 
 
 
