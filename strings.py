@@ -21,11 +21,27 @@ def is_palindrome(s):
     if len(s)<=2:
         return "false"
     return "true" if s == s[::-1] else "false"
-       
-
 # Test the function
 str = "abcdcba"
 result = is_palindrome(str)
 print(result)
+
+
+
+
+# Reverse string including all characters
+def reverseString(STR):
+    return STR[::-1]
+
+# Read the number of test cases
+T = int(input())
+
+# Process each test case
+for _ in range(T):
+    # Read the input string
+    STR = input()
+    
+    # Print the reversed string
+    print(reverseString(STR))
 
 
