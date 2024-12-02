@@ -14,7 +14,7 @@ print(a1)
    print(i)
  # output- 1 2 3 4 5 6
 
-# remove element
+4.# remove element
 # 1 using pop (give index)
 a1.pop(2)
 print(a1)
@@ -26,7 +26,7 @@ print(a1)
 # output array('i', [1, 2, 3, 4, 6])
 
 
-#linear search 
+5.#linear search 
 def linear_search(arr, target):
   for i in range(len(arr)):
     if arr[i]== target:
