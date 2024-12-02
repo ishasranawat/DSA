@@ -1,4 +1,4 @@
-# Missing numbers- The function takes two parameter the array and the number of elements that needs to be in array. 
+1. # Missing numbers- The function takes two parameter the array and the number of elements that needs to be in array. 
 def missing_number(arr, n):
     expected_sum = n * (n + 1) // 2
     actual_sum = sum(arr)
@@ -8,7 +8,7 @@ def missing_number(arr, n):
 
 
 
-# Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. (Two sum)
+2.# Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. (Two sum)
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         for i in range(len(nums)):
@@ -19,7 +19,7 @@ class Solution:
 
 
 
-# Find a number in the array
+3.# Find a number in the array
 def find_num(arr,target):
     for i in range(len(arr)):
         if arr[i]==target:
@@ -33,7 +33,7 @@ find_num(my_arr,9)
 
 
 
-# remove duplicate numbers
+4.# remove duplicate numbers
 def remove_duplicates(arr):
     new_arr= list(set(arr))
     return new_arr
@@ -43,7 +43,7 @@ print(remove_duplicates(arr))
 
 
 
-# Find the maximum product of two integers in an array where all elements are positive
+5.# Find the maximum product of two integers in an array where all elements are positive
 def max_product(arr):
     arr.sort()
     n=len(arr)
@@ -51,7 +51,7 @@ def max_product(arr):
     return product
 
 
-# Remove first and last element and print the middle list
+6.# Remove first and last element and print the middle list
 def middle(lst):
     lst.pop()
     lst.pop(0)
@@ -62,7 +62,7 @@ print(middle(lst))
 
 
 
-# Given a list, write a function to get first, second best scores from the list.
+7.# Given a list, write a function to get first, second best scores from the list.
 def first_second(my_list):
     unique_scores = list(set(my_list))
     unique_scores.sort()
@@ -74,7 +74,7 @@ print(first_second(my_list))
 
 
 
-# Write a function to find all pairs of an integer array whose sum is equal to a given number. Do not consider commutative pairs.
+8.# Write a function to find all pairs of an integer array whose sum is equal to a given number. Do not consider commutative pairs.
 def pair_sum(arr, target_sum):
     result = []
     for i in range(len(arr)):
@@ -88,7 +88,7 @@ target_sum = 7
 print(pair_sum(arr, target_sum))
 
 
-# Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+9.# Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
 def contains_duplicate(nums):
     for i in range(len(nums)):
         for j in range(i+1, len(nums)):
@@ -101,7 +101,7 @@ nums= [1,2,3,1]
 print(contains_duplicate(nums))
 
 
-# FIND DUPLICATE 
+10.# FIND DUPLICATE 
 from sys import *
 from collections import *
 from math import *
@@ -114,7 +114,7 @@ def findDuplicate(arr:list, n:int):
     return -1
 
 
-# next greater number
+11.# next greater number
 from typing import List
 
 def nextGreaterElement(arr: List[int], n: int) -> List[int]:
@@ -130,7 +130,7 @@ def nextGreaterElement(arr: List[int], n: int) -> List[int]:
 
 
 
-# second largest element
+12.# second largest element
 def findSecondLargest(sequenceOfNumbers):
     new_set=list(set(sequenceOfNumbers))
     if len(new_set) < 2:
@@ -141,7 +141,7 @@ def findSecondLargest(sequenceOfNumbers):
 
 
 
-# rearrange alteratively
+13.# rearrange alteratively
 def rearrange(arr):
     # Separate positive and negative numbers
     positives = [x for x in arr if x >= 0]
