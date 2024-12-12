@@ -88,6 +88,7 @@ target_sum = 7
 print(pair_sum(arr, target_sum))
 
 
+
 9.# Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
 def contains_duplicate(nums):
     for i in range(len(nums)):
