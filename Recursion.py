@@ -103,6 +103,11 @@ def capitalizeWords(arr):
         return result
     result.append(arr[0].upper())
     return result + capitalizeWords(arr[1:])
+#Another way
+words = ['hello', 'world', 'python']
+for word in words:
+    print(word.upper())  
+
 
 
 
