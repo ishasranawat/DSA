@@ -11,3 +11,4 @@ class Solution:
            else:
                 stack.append(char)
          return not stack
+
