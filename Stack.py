@@ -1,7 +1,6 @@
 # Parenthesis checker (each opening bracket should have a closing one
 class Solution:
-    
-    def isParenthesisBalanced(self, s):
+     def isParenthesisBalanced(self, s):
         stack = []
         mapping = {')': '(', '}': '{', ']': '['}
         for char in s:
