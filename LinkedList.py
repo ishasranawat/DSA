@@ -12,7 +12,6 @@ class LinkedList:
         self.length = 1
         
 
-
 2.# Insertion at the beginning
 class Node:
     def __init__(self, value):
