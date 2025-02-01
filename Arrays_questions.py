@@ -15,7 +15,6 @@ class Solution:
                     return [i,j]
 
 
-
 3.# Find a number in the array
 def find_num(arr,target):
     for i in range(len(arr)):
