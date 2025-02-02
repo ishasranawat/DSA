@@ -12,7 +12,6 @@ def isPossible(arr, n, m, max_pages):
                 return False
         else:
             current_pages += pages
-    
     return True
 
 def allocateBooks(arr, n, m):
