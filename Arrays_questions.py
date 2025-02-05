@@ -23,7 +23,6 @@ def find_num(arr,target):
             return 
     
     print ("Target not found")
- 
 my_arr=[1,2,3,4,5,6,7]       
 find_num(my_arr,9)
 
