@@ -21,7 +21,6 @@ def find_num(arr,target):
         if arr[i]==target:
             print (f"{target} is present.")
             return 
-    
     print ("Target not found")
 my_arr=[1,2,3,4,5,6,7]       
 find_num(my_arr,9)
