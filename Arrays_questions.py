@@ -146,7 +146,6 @@ def rearrange(arr):
     
     # Initialize result array
     result = []
-    
     # Alternate between negative and positive numbers
     for i in range(max(len(positives), len(negatives))):
         # Add negative number if available
