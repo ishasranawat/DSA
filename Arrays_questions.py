@@ -126,7 +126,6 @@ def nextGreaterElement(arr: List[int], n: int) -> List[int]:
     return result
 
 
-
 12.# second largest element
 def findSecondLargest(sequenceOfNumbers):
     new_set=list(set(sequenceOfNumbers))
