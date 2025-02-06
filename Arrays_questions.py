@@ -107,6 +107,7 @@ def findDuplicate(arr:list, n:int):
         if arr[i]==arr[i-1]:
             return arr[i]
     return -1
+    
 
 11.# next greater number
 from typing import List
