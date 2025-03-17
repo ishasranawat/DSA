@@ -85,7 +85,6 @@ class LinkedList:
         return slow
 
 
-
 5. # Remove duplicates 
 class Node:
     def __init__(self, value):
