@@ -9,8 +9,7 @@ class LinkedList:
         new_node = Node(value)
         self.head = new_node
         self.tail = self.head
-        self.length = 1
-        
+        self.length = 1       
 
 2.# Insertion at the beginning
 class Node:
